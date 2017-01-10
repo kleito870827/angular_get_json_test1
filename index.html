@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div ng-controller='descriptionCtrl'>
+    <div class="">
+      <table style="border-collapse: collapse;">
+        <tr>
+          <th><h1>Title</h1></th>
+          <th><h1>Body</h1></th>
+        </tr>
+        <tr ng-repeat='description in descriptions'>
+          <td style="border-bottom: 1px solid black; background-color: grey;">{{description.title}}</td>
+          <td style="border-bottom: 1px solid black; background-color: grey;">{{description.body}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src='controller/description.js'></script>
+
+</html>
